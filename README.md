@@ -12,12 +12,12 @@ connect multiple appliances to the ports in the control unit, using AI voice rec
 
 ## AI Model:
 Has two classes "SimpleDataset" & "PowerControlAIModel".
-## 1. SimpleDataset:
+1. SimpleDataset:
   Custom dataset class for handling text and labels.
   Formats the dataset into input_ids, attention_mask, and label.
   Sets max length of the input to 128 to make all data the same.
 
-## 2. PowerControlAIModel:
+2. PowerControlAIModel:
   Creates a classification model using "BertTokenizer" and "BertForSequenceClassification".
   "create_dataset": create simple dataset using "SimpleDataset" class.
   "train": Train the model using "TrainingArguments" & "Trainer" from "transformers" library to handle all the training process and logs.
